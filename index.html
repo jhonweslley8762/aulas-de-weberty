@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,38 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="main-header">
-        <div class="logo"> DivClass</div>
-        <nav class="nav-links">
-            <a href="#"> inicio </a>
-            <a href="#"> aulas</a>
-            <a href="#">contato</a>
-        </nav>
-    </header>
 
-    <main class="grid-container">
-        <article class="card">
-            <h3>post 1</h3>
-            <p>Usando flexbox para alinhar este texto e o botão abaixo</p>
-            <button class="btn">Ler mais</button>
-        </article>
-        <article class="card">
-            <h3>post 2</h3>
-            <p>o CSS grid vai cuidar de organizar estes cards quando a tela crescer.</p>
-            <button class="btn">Ler mais</button>
-        </article>
-        <article class="card">
-            <h3>post 3</h3>
-            <p>Simplicidade no mobile, robustez no desktop</p>
-            <button class="btn">Ler mais</button>
-        </article>
-    </main>
+    <div class="container-site">
+        <header class="topo">
+            <a href="#">inicio</a>
+            <a href="#">algo</a>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 Dev Class. Feito com CSS Moderno </p>
-    </footer>
+            <div class="menu">
+                <button class="btn">ler mais</button>
+                <div class="dropdown">
+                    <a href="#">item 1</a>
+                    <a href="#">item 2</a>
+                    <a href="#">item 3</a>
+                </div>
+            </div>
+        </header>
 
+        <main class="container-main">
+            <article class="artigo">
+                <h3>conteúdo 1</h3>
+                <p>esse conteúdo faz alguma coisa ae</p>
+                <button class="btn" id="btn1">ler mais</button>
+            </article>
+            <article class="artigo">
+                <h3>conteúdo 2</h3>
+                <p>esse conteúdo faz alguma coisa ae</p>
+                <button class="btn">ler mais</button>
+            </article>
+
+        </main>
+
+        <div class="menu-tela" id="menu-tela"></div>
+
+    </div>
+    <script src="node.js"></script>
 </body>
 
 </html>
